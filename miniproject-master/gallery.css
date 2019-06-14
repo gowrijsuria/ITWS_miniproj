@@ -1,0 +1,71 @@
+.g{
+        width:100%;
+}
+*{
+        box-sizing:border-box;
+}
+.sidenav a{
+        text-decoration:none;
+        color:black;
+}
+.item{
+        background-color:lightcoral;
+        padding:22px;
+        margin-top:1px;
+
+}
+.sidenav{
+        color:medium blue;
+        font-size:20px;
+        height:100%;
+        width:200px;
+        position:fixed;
+        z-index:1;
+        top:0;
+        left:0;
+        background-color:maroon;
+        padding-top:20px;
+        padding-left:20px;
+}
+.sidenav h:hover{
+        color: white;
+}
+.main{
+        margin-left:200px;
+        margin-right:10px;
+}
+body{
+        margin-right:10px;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+        float: left;
+        width: 21%;
+        padding: 10px;
+}
+
+.column img {
+    margin-left:220px;
+    margin-top: 12px;
+}
+/* Clear floats after the columns */
+.row:after {
+    margin-left:220px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+}
+}
+

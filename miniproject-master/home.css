@@ -1,0 +1,119 @@
+import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.sidenav a{
+        text-decoration:none;
+        color:medium blue;
+}
+/*body {
+  margin-left:310px;
+  font-family: 'Open Sans', 'sans-serif';
+
+  overflow: hidden;
+}*/
+
+.item-1,
+.item-2,
+.item-3 {
+        color:white;
+        position: absolute;
+        display: block;
+        top: 2em;
+        width: 60%;
+        font-size: 2em;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+ }
+
+.item-1{
+        animation-name: anim-1;
+}
+
+.item-2{
+        animation-name: anim-2;
+}
+.item-3{
+        animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+        0%, 8.3% { left: -100%; opacity: 0; }
+        8.3%,25% { left: 25%; opacity: 1; }
+        33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+        0%, 33.33% { left: -100%; opacity: 0; }
+        41.63%, 58.29% { left: 25%; opacity: 1; }
+        66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+        0%, 66.66% { left: -100%; opacity: 0; }
+        74.96%, 91.62% { left: 25%; opacity: 1; }
+        100% { left: 110%; opacity: 0; }
+}
+.item{
+        background-color:powderblue;
+        padding:22px;
+        margin-top:1px;
+
+}
+.font1{
+        color:white;
+        font-family:sans serif;
+        margin-left:100px;
+}
+.typewriter h1{
+
+        overflow:hidden;
+        border-right: .15em white;
+        white-space:nowrap;
+        margin:0 auto;
+        color:white;
+        letter-spacing: .15em;
+        animation:
+        typing 3.5s steps(40,end),
+        blink-caret .75s step-end infinite;
+        }
+@keyframes typing{
+        from{width:0}
+        to{width:100%}
+}
+@keyframes blink-caret{
+        from,to{border-color:white}
+        50%{border-color:white;}
+}
+.sidenav{
+        color:medium blue;
+        font-size:20px;
+        height:100%;
+        width:200px;
+        position:fixed;
+        z-index:1;
+        top:0;
+        left:0;
+        background-color:darkblue;
+        padding-top:20px;
+}
+.sidenav h:hover{
+        color: white;
+}
+.main{
+        margin-left:200px;
+        }
+body,html{
+        margin-top:10px;
+        height:100%;
+}
+
+.bg{
+        background-image:url("http://78.media.tumblr.com/bb6fa5fbdedea5be08bfaca08a853c93/tumblr_nwn7shUcQP1qa763mo1_500.gif");
+        //background-image:url("https://media2.giphy.com/media/3o7buijTqhjxjbEqjK/200w.gif#4-grid1");
+        background-repeat:no-repeat;
+        background-size:cover;
+        width:100%;
+        }
+*{
+        box-sizing:border-box;
+}
+
